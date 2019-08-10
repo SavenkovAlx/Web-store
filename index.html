@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dobroshop - интернет-магазин добрых услуг</title>
+	<link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.10.0/css/all.css">
+	<link rel="stylesheet" type= "text/css" href="./css/main.css" id="styles">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".btn .fa-times").hide();
+
+    $(".btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".btn .fa-times").show();
+      $(".mobile ul").addClass("active");
+    });
+
+    $(".btn .fa-times").click(function(){
+      $(this).hide();
+      $(".btn .fa-bars").show();
+      $(".mobile ul").removeClass("active");
+    });
+    });
+  </script>
+</head>
+
+<body>
+	<header class="container">
+<a href="/" class="logo"> 
+			FASHI<div id="circle"></div>N
+</a>
+<div class="menu desk">
+		<ul class="nav">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Новинки</a></li>
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">Доставка</a></li>
+			</ul>
+			</div>
+			<div class="menu mobile">
+				<div class="btn">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+					<ul class="nav">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Новинки</a></li>
+							<li><a href="#">Sale</a></li>
+							<li><a href="#">Доставка</a></li>
+						</ul>
+						</div>
+		<div class="delivery desk">
+		<div class="delivery__phone">
+			<a href=”tel:+788005000522”>8 800 500-05-22</a>
+		</div>
+		<div class="delivery-free__text">Бесплатно по России</div>	
+		</div>
+
+
+	</header>
+	<div class="container">
+		<div id="main">
+	<div>
+		<script data-cfasync="false" type="text/javascript"
+			src="https://app.ecwid.com/script.js?17731317&data_platform=code&data_date=2019-07-25" charset="utf-8"></script>
+		<script type="text/javascript">
+			xProductBrowser("categoriesPerRow=3", "views=grid(20,3) list(60) table(60)", "categoryView=grid", "searchView=list",
+				"id=my-store-17731317");
+		</script>
+	</div>
+	</div>
+	</div>
+	<footer>
+						<div class="fashion">
+								© FASHION, 2019
+						</div>
+	</footer>
+	<script>
+		Ecwid.OnPageLoaded.add(function(page) {
+		var styles = $('#styles');
+		styles.remove();
+		$('head').append(styles);
+		var cart = $('.footer__link--shopping-cart');
+		$(cart).html($(cart).html().replace('Shopping Bag', ''));
+		if($('header .footer__link--shopping-cart').length==0){
+			$('header').append(cart);
+		} else {
+			$('.ec-footer .footer__link--shopping-cart').remove
+		}
+		$('.ec-footer').remove();
+		var buy = $('.form-control__button-text')
+		$(buy).html($(buy).html().replace('Buy Now', 'Купить'));
+});
+	</script> 
+	
+</body>
+
+</html>

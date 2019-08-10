@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  color: inherit;
+  background: #fff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 26%;
+  flex: 1 0 auto; }
+
+.container {
+  min-height: 100%;
+  width: 90%;
+  max-width: 1260px;
+  margin: 50px auto;
+  padding: 0 0 0 30px; }
+
+#main {
+  overflow: auto;
+  padding-bottom: 50px; }
+
+a.logo {
+  color: black;
+  height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-weight: 700;
+  display: flex;
+  margin-right: auto; }
+
+#circle {
+  margin: 10px 5px 0 5px;
+  width: 19px;
+  height: 19px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #1D23B6; }
+
+.menu.desk {
+  display: flex;
+  justify-content: center; }
+  .menu.desk .nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around; }
+    .menu.desk .nav li a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding: 20px;
+      margin: 0 25px;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .menu.desk .nav li a:hover {
+        text-decoration: underline; }
+
+.menu.mobile {
+  display: none; }
+  .menu.mobile .nav {
+    list-style: none; }
+  .menu.mobile li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-weight: 600; }
+    .menu.mobile li a:hover {
+      text-decoration: underline; }
+
+.delivery {
+  margin-left: auto;
+  font-weight: 600; }
+  .delivery a {
+    text-decoration: none;
+    color: black; }
+
+svg {
+  color: black;
+  margin-left: 50px;
+  position: fixed;
+  margin-top: -15px; }
+
+#my-store-17731317 {
+  flex: 1 0 auto; }
+
+html#ecwid_html body#ecwid_body .ec-size .ec-store .grid__products--medium-items .grid-product__title-inner {
+  font-size: 20px;
+  color: #333; }
+
+footer {
+  text-align: center;
+  background: black;
+  position: relative;
+  color: #fff;
+  height: 50px;
+  margin-top: -50px;
+  clear: both; }
+
+.fashion {
+  padding-top: 15px;
+  font-family: Proxima Nova;
+  font-size: 15px;
+  text-align: center;
+  color: white; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 25px; }
+  .menu.desk {
+    display: none; }
+  .menu.mobile {
+    display: block;
+    position: absolute;
+    padding-top: 40vh;
+    width: 100%;
+    z-index: 3; }
+    .menu.mobile .btn {
+      position: relative; }
+      .menu.mobile .btn .fa {
+        position: fixed;
+        left: 25px;
+        top: 30px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer; }
+    .menu.mobile .nav {
+      margin-top: 60px;
+      background: #fff;
+      display: none; }
+    .menu.mobile li {
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      margin: 0 auto; }
+  .desk {
+    display: none; }
+  .logo {
+    margin-left: auto; }
+  svg {
+    margin-left: auto; }
+  .mobile .nav.active {
+    display: block; } }

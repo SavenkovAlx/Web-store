@@ -1,0 +1,72 @@
+//Широкоформатные
+
+@include mediaXl {
+  
+}
+
+//ПК, ноутубки
+
+@include mediaLg {
+  
+}
+
+//Планшеты, маленький ноутубки
+
+@include mediaMd {
+ .container {
+   margin: 25px;
+ }
+  .menu.desk {
+    display: none;
+  }
+  .menu.mobile {
+    display: block;
+    position: absolute;
+    padding-top: 40vh;
+    width: 100%;
+    z-index: 3;
+    
+    .btn {
+      position: relative;
+
+      .fa {
+        position: fixed;
+        left: 25px;
+        top: 30px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+      }
+    }
+    .nav {
+      margin-top: 60px;
+      background: #fff;
+      display: none;
+    }
+    li {
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  }
+  .desk {
+    display: none;
+  }
+  .logo {
+    margin-left: auto;
+  }
+ svg {
+   margin-left: auto;
+ }
+ .mobile .nav.active {
+  display: block;
+}
+  
+}
+
+//Смартфоны
+
+@include mediaSm {
+  
+}
